@@ -1,5 +1,7 @@
-function CustomButton(){
-    return <button type="submit" style={{color:'white',backgroundColor:'green',padding:'10px',borderRadius:'10px',border:'none',marginTop:'10px'}}>Submit the Data</button>
+import './styles.css'
+
+function CustomButton({title,type,buttonColor}){
+    return <button type={type} className={`btn ${buttonColor} px-5 py-2`}>{title}</button>
 }
 
 export default CustomButton
